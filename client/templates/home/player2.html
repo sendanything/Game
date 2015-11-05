@@ -1,0 +1,15 @@
+﻿
+<template name="player2">
+    <h2> here comes the player 2!!!</h2>
+
+    {{#with game}}
+    <button class="selected" id="Rock">Rock</button>
+    <button class="selected" id="Paper">Paper</button>
+    <button class="selected" id="Scissors">Scissors</button>
+
+    <p class="play2" style="display: none">You've have selected {{player2SelectedItem}}.</p>
+    <p class="play1" style="display: none">Player1 selected {{player1SelectedItem}}.</p>
+
+    <h1 class="play1" style="display: none"> {{whoWon}}</h1>
+    {{/with}}
+</template>
